@@ -1,0 +1,87 @@
+%input {
+    color: $font-black;
+    box-sizing: border-box;
+    background-color: $background-input;
+    padding: $gs*3-0.1 $gs*5 $gs*3+0.1;
+    border: none;
+    border-radius: $border-radius;
+    outline: none;
+    width: 100%;
+    @include placeholder {
+        color: $font-gray-light;
+    }
+}
+
+input {
+    &[type="text"], &[type="email"], &[type="search"], &[type="password"], &[type="number"] {
+        @extend %text-size-m;
+        @extend %input;
+        height: $gs*12;
+    }
+    &[type="number"] {
+        -moz-appearance: textfield;
+        &::-webkit-inner-spin-button,
+        &::-webkit-outer-spin-button
+        {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+    }
+}
+
+textarea {
+    @extend %input;
+    min-height: $gs * 24;
+    max-height: $gs * 72;
+    resize: none;
+}
+
+.tgl {
+    display: none;
+    + label {
+        outline: 0;
+        display: block;
+        width: $gs*22;
+        height: $gs*12;
+        margin: $gs auto;
+        position: relative;
+        cursor: pointer;
+        user-select: none;
+        background: $background-input;
+        border-radius: $gs * 10;
+        padding: $gs;
+        transition: all $default-transition ease;
+        &:after,
+        &:before {
+            position: relative;
+            display: block;
+            content: "";
+            width: 50%;
+            height: 100%;
+        }
+
+        &:after {
+            left: 0;
+            border-radius: 50%;
+            background: #fff;
+            transition: all .2s ease;
+        }
+
+        &:before {
+            display: none;
+        }
+    }
+
+    &:checked + label {
+        background: $secondary;
+        &:after {
+            left: 50%;
+        }
+    }
+
+    ~ .form__caption {
+        width: $gs* 40;
+        margin: $gs auto 0;
+    }
+
+}

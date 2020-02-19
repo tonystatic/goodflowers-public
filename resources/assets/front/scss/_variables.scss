@@ -1,0 +1,46 @@
+/* Grid */
+$gs: .4rem; //grid size
+
+/* Colors */
+$primary:           #26D164;
+
+$secondary:         #40A0D7;
+$secondary-light:   rgba(64,160,215,.2);
+
+$font-black:        #333333;
+$font-gray:         #4f4f4f;
+$font-gray-light:   #828282;
+
+$border-gray:       #E0E0E0;
+
+$danger-dark:       #F13C3C;
+
+$link:              #40A0D7;
+
+$font-white:        #FFFFFF;
+$background-page:   #FFFEFC;
+$background-input:  #F6F6F6;
+
+/* Fonts */
+$font-size:   $gs*4;
+$line-height: $gs*6;
+
+/* Shadows */
+$shadow-btn: 0 .4rem .4rem rgba(0,0,0,.15);
+$shadow-block: 0 .2rem .8rem rgba(0,0,0,.1);
+$text-shadow: 0 .2rem .4rem rgba(0,0,0,.1);
+
+/* Border-radius */
+$border-radius: $gs * 2;
+
+/* Margins & Paddings */
+$inner-padding: $gs*4;
+$outer-margin:  $gs*7;
+
+/* Sizes */
+$footer-height: $gs*60;
+
+/* Transitions */
+$default-transition: 0s;
+$slow-transition: .4s;
+

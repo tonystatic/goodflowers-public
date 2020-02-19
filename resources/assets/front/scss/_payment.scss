@@ -1,0 +1,60 @@
+.payment {
+    &__card {
+        .row {
+            margin-top: $gs * 4;
+            &:first-of-type {
+                margin-top: 0;
+            }
+        }
+        .form__title {
+            font-weight: 500;
+        }
+    }
+    &__number {
+        width: $gs * 12 !important;
+        margin: 0 $gs;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+        text-align: center;
+
+        &--increment, &--decrement {
+            box-shadow: $shadow-btn;
+            user-select: none;
+            text-align: center;
+            display: inline-block;
+            width: $gs * 8;
+            height: $gs * 8;
+            line-height: $gs * 8;
+            border-radius: 50%;
+            padding: 0;
+            cursor: pointer;
+
+            &:hover {
+                background-color: lighten($background-input, 10%);
+            }
+
+            &:active {
+                box-shadow: $shadow-block;
+            }
+        }
+
+        &--decrement {
+            i {
+                top: -0.25 * $gs;
+                position: relative;
+            }
+        }
+    }
+    &__sum {
+        @extend %text-size-xxl-emphasized;
+        font-variant-numeric: lining-nums;
+        margin-top: $gs * 1.5;
+    }
+
+    &__btn {
+        margin-bottom: $gs * 2;
+        + p {
+            margin-bottom: $gs * 3;
+        }
+    }
+}

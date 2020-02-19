@@ -1,0 +1,123 @@
+.garden {
+    &__canvas {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        overflow: scroll;
+        right:0;
+        top:0;
+        //background: url("../img/flowers.png") top right no-repeat;
+        background-size: contain;
+        z-index: 0;
+        will-change: transform;
+    }
+    &__svg {
+        position: absolute;
+        right: 0;
+        outline: none !important;
+        cursor: grab;
+        g {
+            outline: none !important;
+        }
+    }
+    &__card {
+        z-index: 1;
+        position: fixed;
+        bottom: $gs * 7;
+        left: $gs * 7;
+        width: $gs*100;
+        max-height: 90%;
+        overflow-y: scroll;
+        will-change: transform;
+        @include breakpoint(xs) {
+            bottom: inherit;
+            top: 70%;
+            left: 0;
+            position: absolute;
+            width: 100%;
+            max-height: none;
+        }
+        //Template for scrollbar
+        //&::-webkit-scrollbar
+        //{
+        //    width: $gs*2;
+        //}
+        //&::-webkit-scrollbar-track
+        //{
+        //    box-shadow: inset 0 0 $gs rgba(0,0,0,0.3);
+        //    border-radius: $gs*2;
+        //}
+        //&::-webkit-scrollbar-thumb
+        //{
+        //    -webkit-box-shadow: inset 0 0 $gs rgba(0,0,0,.3);
+        //    border-radius: $gs*2;
+        //    background-color: $primary;
+        //}
+    }
+    &__name, &__donate, &__info, &__share, &__extra {
+        margin-bottom: $gs * 3;
+    }
+
+    &__name {
+        .h2 {
+            @extend %text-size-xl;
+        }
+        .h3 {
+            @extend %text-size-xl-emphasized;
+        }
+    }
+
+    &__info {
+        p {
+            margin-bottom: 0;
+        }
+        .h3 {
+            @extend %text-size-xxxxl-emphasized;
+            font-variant-numeric: lining-nums;
+            span {
+                font-size: $gs*10;
+                line-height: $gs*11;
+            }
+        }
+    }
+
+    &__socials {
+        width: 100%;
+        text-align: center;
+    }
+
+    &__extra {
+        //border-top: 1px solid $border-gray;
+        //text-align: center;
+        //padding: $gs*3 0 0;
+        //margin-top: $gs*3;
+        //p {
+        //    text-align: left;
+        //}
+        &--btn {
+            margin-bottom: $gs * 2;
+            cursor: pointer;
+            text-decoration: underline;
+            &:hover {
+                text-decoration: none;
+            }
+        }
+        &--hidden {
+            display: none;
+        }
+    }
+
+    &__docs {
+        @extend %text-size-s;
+    }
+    
+    &__arrow {
+        text-align: center;
+        svg {
+            width: $gs * 20;
+            height: $gs * 10;
+            margin-bottom: - $gs * 4;
+        }
+    }
+
+}

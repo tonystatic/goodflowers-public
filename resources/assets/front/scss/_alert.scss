@@ -1,0 +1,51 @@
+.alerts {
+    position: fixed;
+    z-index: 99999;
+    bottom: $gs * 7;
+    right: 0;
+    width: 100%;
+    max-width: $gs * 100;
+    padding: 0 $gs * 6;
+    @include breakpoint(xs) {
+        bottom: inherit;
+        top: 0;
+        left: 0;
+        right: 0;
+        max-width: none;
+        margin: auto;
+        padding: 0;
+    }
+}
+
+
+.alert {
+    &:last-of-type {
+        margin-bottom: 0;
+    }
+    width: 100%;
+    border: none;
+    padding: $inner-padding;
+    box-shadow: $shadow-block;
+    border-radius: $border-radius;
+    box-sizing: border-box;
+
+    @include breakpoint(xs) {
+        .container {
+            padding-right: 25px;
+        }
+    }
+    .container {
+        position: relative;
+    }
+    .close {
+        position: absolute;
+        top: -$gs;
+        right: 0;
+        font-size: $gs * 8;
+        text-shadow: none;
+        outline: none;
+    }
+    ul {
+        margin: 0;
+    }
+}

@@ -1,0 +1,19 @@
+.flowers-preview {
+    text-align: center;
+    &__flower {
+        width: $gs * 20;
+        height: $gs * 20;
+        background-size: contain;
+        position: relative;
+        display: inline-block;
+        vertical-align: middle;
+        &:nth-of-type(1) { z-index: 3; }
+        &:nth-of-type(2) { z-index: 2; margin-left: -18%; }
+        &:nth-of-type(3) { z-index: 1; margin-left: -18%; }
+    }
+    &__diff {
+        display: inline-block;
+        vertical-align: middle;
+        @extend %text-size-l;
+    }
+}

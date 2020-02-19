@@ -1,0 +1,91 @@
+.mb-0, .my-0 {
+    margin-bottom: 0 !important;
+}
+.mb-1, .my-1 {
+    margin-bottom: $gs !important;
+}
+.mb-2, .my-2 {
+    margin-bottom: $gs * 2 !important;
+}
+.mb-3, .my-3 {
+    margin-bottom: $gs * 3 !important;
+}
+.mb-4, .my-4 {
+    margin-bottom: $gs * 4 !important;
+}
+.mb-5, .my-5 {
+    margin-bottom: $gs * 5 !important;
+}
+.mb-6, .my-6 {
+    margin-bottom: $gs * 6 !important;
+}
+
+
+.mt-0, .my-0 {
+    margin-top: 0 !important;
+}
+.mt-1, .my-1 {
+    margin-top: $gs !important;
+}
+.mt-2, .my-2 {
+    margin-top: $gs * 2 !important;
+}
+.mt-3, .my-3 {
+    margin-top: $gs * 3 !important;
+}
+.mt-4, .my-4 {
+    margin-top: $gs * 4 !important;
+}
+.mt-5, .my-5 {
+    margin-top: $gs * 5 !important;
+}
+.mt-6, .my-6 {
+    margin-top: $gs * 6 !important;
+}
+
+@include breakpoint(xs) {
+    .mb-xs-0, .my-xs-0 {
+        margin-bottom: 0 !important;
+    }
+    .mb-xs-1, .my-xs-1 {
+        margin-bottom: $gs !important;
+    }
+    .mb-xs-2, .my-xs-2 {
+        margin-bottom: $gs * 2 !important;
+    }
+    .mb-xs-3, .my-xs-3 {
+        margin-bottom: $gs * 3 !important;
+    }
+    .mb-xs-4, .my-xs-4 {
+        margin-bottom: $gs * 4 !important;
+    }
+    .mb-xs-5, .my-xs-5 {
+        margin-bottom: $gs * 5 !important;
+    }
+    .mb-xs-6, .my-xs-6 {
+        margin-bottom: $gs * 6 !important;
+    }
+
+    .mt-xs-0, .my-xs-0 {
+        margin-top: 0 !important;
+    }
+    .mt-xs-1, .my-xs-1 {
+        margin-top: $gs !important;
+    }
+    .mt-xs-2, .my-xs-2 {
+        margin-top: $gs * 2 !important;
+    }
+    .mt-xs-3, .my-xs-3 {
+        margin-top: $gs * 3 !important;
+    }
+    .mt-xs-4, .my-xs-4 {
+        margin-top: $gs * 4 !important;
+    }
+    .mt-xs-5, .my-xs-5 {
+        margin-top: $gs * 5 !important;
+    }
+    .mt-xs-6, .my-xs-6 {
+        margin-top: $gs * 6 !important;
+    }
+
+}

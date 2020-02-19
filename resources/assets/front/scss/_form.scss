@@ -1,0 +1,93 @@
+.form {
+    &__header {
+        text-align: center;
+        margin-bottom: $gs*6;
+        h1, .h1 {
+            @extend %text-size-xxl-emphasized;
+            &--with-separator {
+                display: inline-block;
+                vertical-align: middle;
+                margin-right: $gs * 3;
+            }
+        }
+    }
+    &__title {
+        display: block;
+        @extend %text-size-m-emphasized;
+        margin-bottom: $gs;
+        &--extra {
+            @extend %text-size-s;
+            color: $font-gray;
+            margin-left: $gs;
+        }
+    }
+    &__input, &__textarea {
+        max-width: none;
+        margin-bottom: $gs * 4;
+        &:last-of-type {
+            margin-bottom: 0;
+        }
+    }
+    &__textarea {
+        &:last-of-type {
+            margin-bottom: - $gs;
+        }
+    }
+    &__label {
+        width: 100%;
+        margin-bottom: $gs*4;
+        &:last-of-type {
+            margin-bottom: 0;
+        }
+    }
+    &__hint {
+        margin-top: $gs * 2;
+        text-align: right;
+        @extend %text-size-s-emphasized;
+        a {
+            color: $secondary;
+            transition: opacity $default-transition ease;
+            &:hover {
+                opacity: .7;
+            }
+        }
+    }
+    &__caption {
+        display: block;
+        margin-top: $gs;
+        @extend %text-size-s;
+        color: $font-gray;
+    }
+    &__group {
+        margin-top: $gs*2;
+        &:first-of-type {
+            margin-top: 0;
+        }
+    }
+    &__buttons {
+        margin-top: $gs * 6;
+        text-align: center;
+        @include breakpoint(xs) {
+            .btn {
+                width: 100%;
+            }
+        }
+    }
+
+    &__extra {
+        @extend %text-size-s-emphasized;
+        color: $font-gray;
+        margin-top: $gs * 4;
+        text-align: center;
+        a {
+            color: $secondary;
+            transition: opacity $default-transition ease;
+            &:hover {
+                opacity: .7;
+            }
+        }
+    }
+}
+.h3 + .form__caption {
+    margin-top: 0;
+}

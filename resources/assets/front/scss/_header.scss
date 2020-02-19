@@ -1,0 +1,28 @@
+.header {
+    z-index: 1;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: $gs*7 0;
+    @include breakpoint(xs) {
+        padding: $gs*4 0;
+        position: fixed;
+    }
+    &__btn {
+        max-width: $gs * 50;
+    }
+    &__logo {
+        @extend %text-size-xl-emphasized;
+        @include breakpoint(xs) {
+            font-size: $gs*4;
+        }
+        a {
+            text-decoration: none;
+            &:hover {
+                color: $font-black;
+                opacity: .7;
+            }
+        }
+    }
+}

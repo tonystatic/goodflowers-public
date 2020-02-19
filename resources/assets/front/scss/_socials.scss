@@ -1,0 +1,127 @@
+.socials {
+    &__item {
+        width: $gs*10;
+        height: $gs*10;
+        border-radius: 50%;
+        color: $secondary;
+        border: 1px solid $secondary;
+        margin-right: $gs*3;
+        &:last-of-type {
+            margin-right: 0;
+        }
+        text-align: center;
+        display: inline-flex;
+        vertical-align: middle;
+        transition: background-color $default-transition ease, color $default-transition ease;
+        @extend %a-center;
+
+        &--link {
+            margin-top: $gs;
+            cursor: pointer;
+            color: $font-gray;
+            text-decoration: underline;
+            &:hover {
+                text-decoration: none;
+            }
+        }
+
+        svg {
+            fill: $secondary;
+            stroke-width: 0;
+            transition: fill $default-transition ease;
+        }
+        .feather-facebook {
+            height: $gs*5;
+            margin-left: - ($gs - 0.2);
+        }
+        .feather-send {
+            height: $gs*4;
+            margin-left: - ($gs - 0.2);
+        }
+        .feather-twitter {
+            height: $gs*4;
+        }
+        .icon-vk {
+            height: $gs*5;
+        }
+        .feather-instagram {
+            height: $gs*4;
+            stroke-width: $gs*0.6;
+            fill: none;
+        }
+        .icon-google {
+
+        }
+
+        &:hover {
+            background-color: $secondary;
+            color: white;
+            svg {
+                fill: white;
+            }
+            .feather-instagram {
+                fill: none;
+            }
+        }
+    }
+
+    &__btn {
+        color: white;
+        margin-bottom: $gs;
+        &:last-of-type {
+            margin-bottom: 0;
+        }
+        &:hover {
+            color: white;
+        }
+        svg {
+            fill: white;
+            stroke-width: 0;
+            transition: fill $default-transition ease;
+        }
+        .feather-instagram {
+            stroke-width: $gs*0.6;
+            fill: none;
+        }
+        &--fb {
+            background-color: #3c66c4;
+            &:hover {
+                background-color: darken(#3c66c4, 5%);
+            }
+            &:focus {
+                background-color: darken(#3c66c4, 10%);
+            }
+        }
+        &--vk {
+            background-color: #45668e;
+            &:hover {
+                background-color: darken(#45668e, 5%);
+            }
+            &:focus {
+                background-color: darken(#45668e, 10%);
+            }
+        }
+        &--in {
+            background-color: #E1306C;
+            &:hover {
+                background-color: darken(#E1306C, 5%);
+            }
+            &:focus {
+                background-color: darken(#E1306C, 10%);
+            }
+        }
+        &--tw {
+            background-color: #00aced;
+            &:hover {
+                background-color: darken(#00aced, 5%);
+            }
+            &:focus {
+                background-color: darken(#00aced, 10%);
+            }
+        }
+    }
+
+    &__buttons {
+        margin-bottom: $gs * 6;
+    }
+}

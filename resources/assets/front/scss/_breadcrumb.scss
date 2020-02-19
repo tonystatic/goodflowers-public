@@ -1,0 +1,29 @@
+.breadcrumb {
+    list-style: none;
+    padding: 0;
+    cursor: default;
+    font-size: 0;
+    line-height: 1;
+    margin-bottom: $gs*2;
+    &__item {
+        display: inline-block;
+        color: $font-gray-light;
+        @extend %text-size-l-emphasized;
+        svg {
+            position: relative;
+            stroke-width: $gs / 2;
+            width: $gs * 4;
+            height: $gs * 4;
+            top: $gs;
+            margin-left: $gs * 2;
+        }
+    }
+    &__link {
+        color: $font-gray-light;
+        transition: color $default-transition ease;
+        &:hover, &:active {
+            color: $font-gray-light;
+            opacity: .7;
+        }
+    }
+}

@@ -1,0 +1,60 @@
+.modal {
+    background: rgba(0,0,0,.7);
+    &-dialog {
+        max-width: $gs * 100;
+        padding: $gs * 6;
+        margin: auto;
+    }
+    &__content {
+        padding: $gs*6;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        background-color: $background-page;
+        border-radius: $gs;
+        pointer-events: auto;
+    }
+    &__close {
+        cursor: pointer;
+        color: $font-gray;
+        width: $gs*9;
+        height: $gs*9;
+        border-radius: 50%;
+        padding: 0;
+        outline: none;
+        border: none;
+        position: absolute;
+        top: $gs;
+        right: $gs;
+        svg {
+            stroke-width: $gs;
+            transition: opacity $default-transition ease;
+        }
+        &:hover {
+            svg {
+                opacity: .7;
+            }
+        }
+        &:active, &:focus {
+            outline: none;
+        }
+    }
+    &__hint {
+        width: 100%;
+        text-align: center;
+        color: $font-black;
+        border: 1px solid $border-gray;
+        border-radius: $gs;
+        margin-bottom: $gs * 4;
+        padding: $gs;
+        @extend %text-size-m;
+    }
+    &__title {
+        color: $font-black;
+        @extend %text-size-l-emphasized;
+        margin-bottom: $gs * 4;
+    }
+}
+
+

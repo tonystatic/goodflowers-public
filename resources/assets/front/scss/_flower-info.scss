@@ -1,0 +1,65 @@
+.flower-info {
+    //&__arrow {
+    //    display: block;
+    //    position: absolute;
+    //    bottom: - $gs * 8;
+    //    width: 0;
+    //    left: 0;
+    //    right: 0;
+    //    margin: auto;
+    //    height: 0;
+    //    border-left: $gs * 5 solid transparent;
+    //    border-right: $gs * 5 solid transparent;
+    //    border-top: $gs * 8 solid white;
+    //    filter: drop-shadow(0 .4rem 0rem rgba(0,0,0,.05));
+    //}
+    //@include breakpoint(xs) {
+    //    left: auto !important;
+    //    top: auto !important;
+    //    &__arrow {
+    //        display: none;
+    //    }
+    //}
+    //@include breakpoint(sm) {
+    //    width: $gs * 70;
+    //    position: absolute;
+    //}
+
+    &__hint {
+        @extend %text-size-s;
+    }
+    &__btn-share {
+        margin-top: $gs * 3;
+    }
+    &__share-block {
+        display: none;
+        margin-top: $gs * 4;
+    }
+    &__socials {
+        margin-bottom: $gs * 3;
+    }
+    &__image {
+        height: $gs * 30;
+        width: $gs * 30;
+        background-size: contain;
+        margin-bottom: $gs * 2;
+    }
+    &__owner-block {
+        > p {
+            margin-bottom: 0;
+        }
+        .h3 {
+            @extend %text-size-xxl-emphasized;
+            font-variant-numeric: lining-nums;
+            margin-bottom: $gs * 3;
+        }
+    }
+}
+//
+//@include breakpoint(sm) {
+//    #flowerModal {
+//        .modal-dialog {
+//            max-width: none;
+//        }
+//    }
+//}

@@ -1,0 +1,81 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: normal;
+    color: $font-black;
+    @extend %text-size-m;
+}
+
+h1, h2, h3, h4, .h1, .h2, .h3, .h4 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
+    margin: 0;
+    span {
+        font-weight: 400;
+    }
+}
+
+h1, .h1 {
+    @extend %text-size-xl-emphasized;
+    section>.container> & {
+        margin-bottom: $gs*6;
+    }
+    + p {
+        margin-top: $gs * 6;
+        margin-bottom: $gs * 4;
+        @extend %text-size-m;
+    }
+}
+
+h2, .h2 {
+    @extend %text-size-xl;
+}
+
+h3, .h3 {
+    @extend %text-size-l-emphasized;
+}
+
+h4, .h4 {
+    @extend %text-size-m-emphasized;
+}
+
+.nav-link {
+    @extend %text-size-l;
+    font-weight: 500;
+    color: $font-black;
+}
+
+.dropdown-item {
+    @extend %text-size-m;
+}
+
+p {
+    margin: 0 0 $gs * 2;
+    &:last-child {
+        margin-bottom: 0;
+    }
+    font-weight: 400;
+    @extend %text-size-m;
+    a {
+        text-decoration: underline;
+        &:hover {
+            text-decoration: none;
+        }
+    }
+}
+
+strong {
+    font-weight: 600;
+}
+
+ul, ol {
+    font-size: $font-size;
+    padding-left: 1.5rem;
+}
+
+i {
+    font-style: normal;
+}

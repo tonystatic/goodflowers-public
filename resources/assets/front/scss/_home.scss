@@ -1,0 +1,58 @@
+.home {
+    max-width: $gs * 130;
+    margin: 0 auto;
+    padding: $gs * 30 0;
+    position: relative;
+    z-index: 1;
+    &__main-container {
+        position: relative;
+        overflow: hidden;
+        min-height: 100%;
+    }
+    &__flower {
+        position: absolute;
+        width: 50%;
+        z-index: 0;
+        svg {
+            width: 100%;
+            height: auto;
+        }
+        &--top {
+            top: 0;
+            right: 0;
+            transform: translate(30%, -30%);
+        }
+        &--bottom {
+            left: 0;
+            bottom: 0;
+            transform: translate(-30%, 65%);
+        }
+        @include breakpoint(xs) {
+            width: 80%;
+        }
+    }
+    &__h1 {
+        @extend %text-size-xxxxl-emphasized;
+        margin-bottom: $gs * 9;
+        span {
+            display: block;
+            font-family: 'Source Sans Pro', sans-serif;
+            @extend %text-size-m;
+        }
+    }
+    &__h2 {
+        @extend %text-size-l;
+        margin-bottom: $gs * 2;
+    }
+    &__description {
+        margin-bottom: $gs * 8;
+    }
+    &__guide {
+        li {
+            margin-bottom: $gs;
+        }
+        ol {
+            margin-bottom: $gs * 8;
+        }
+    }
+}
